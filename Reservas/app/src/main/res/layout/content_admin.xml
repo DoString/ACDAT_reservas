@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_admin"
+    tools:context="com.reservas.acdat.reservas.actividades.AdminActivity"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ususario:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VALOR"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:id="@+id/lbladmin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VALOR"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:id="@+id/mail"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password: " />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:password="true"
+            android:id="@+id/pass"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asunto: " />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:id="@+id/asunto"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensaje: " />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="4"
+            android:id="@+id/mensaje"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profesores"
+        android:layout_gravity="center"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profes">
+
+    </ListView>
+
+</LinearLayout>
